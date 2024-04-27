@@ -1,4 +1,3 @@
-import 'package:device_preview/device_preview.dart';
 import 'package:dio/dio.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +21,7 @@ main() async {
         Locale('ar'),
       ],
       path:
-          'assets/translations', // <-- change the path of the translation files
+          'assets/translations', 
       fallbackLocale: const Locale('ar'),
       child: const TaskApp(),
     ),

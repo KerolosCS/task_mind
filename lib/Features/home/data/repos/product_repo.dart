@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
 import 'package:task_mind/Features/home/data/models/home_model.dart';
 import 'package:task_mind/Features/home/data/models/more_model.dart';
 import 'package:task_mind/core/utils/api_service.dart';
@@ -10,7 +11,9 @@ class HomeRepo {
       'auth_key': 'xx508xx63817x7525x74g004x30706542858349x5x78f5xx34xnh468',
       'user_id': '9'
     });
-    print(res.length);
+    if (kDebugMode) {
+      print(res.length);
+    }
     return HomeModel.fromJson(res);
   }
 
@@ -24,12 +27,9 @@ class HomeRepo {
       'limit': '30',
     });
     //[{"key":"item_count","value":"0","type":"text"}][{"key":"search_with","value":"home_types","description":"keyword,home_types","type":"text"}]
-    print(res.length);
+    if (kDebugMode) {
+      print(res.length);
+    }
     return MoreProductsModel.fromJson(res);
   }
-
-  // Future<ProductMedel> getProducts() async {
-  //   var res = await api.get(endPoint: 'products');
-  //   return ProductMedel.fromJson(res);
-  // }
 }

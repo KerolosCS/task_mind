@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:task_mind/Features/home/presentation/manager/cubit/cubit/more_cubit.dart';
-import 'package:task_mind/Features/home/presentation/manager/cubit/home_cubit.dart';
 import 'package:task_mind/Features/home/presentation/views/widgets/home_grid_view.dart';
-import 'package:task_mind/Features/home/presentation/views/widgets/home_view_body.dart';
 
 
 class AllProductsView extends StatefulWidget {

@@ -4,13 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:task_mind/Features/home/data/models/home_model.dart';
-import 'package:task_mind/Features/home/data/models/more_model.dart';
 import 'package:task_mind/Features/home/data/repos/product_repo.dart';
-import 'package:task_mind/Features/home/presentation/views/widgets/cart_body.dart';
-import 'package:task_mind/Features/home/presentation/views/widgets/fav_body.dart';
-import 'package:task_mind/Features/home/presentation/views/widgets/home_view_body.dart';
-import 'package:task_mind/Features/home/presentation/views/widgets/profile_body.dart';
-import 'package:task_mind/Features/home/presentation/views/widgets/screen2_view_body.dart';
 import 'package:task_mind/core/utils/api_service.dart';
 
 part 'home_state.dart';
