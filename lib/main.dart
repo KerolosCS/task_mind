@@ -1,3 +1,4 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:dio/dio.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
@@ -6,12 +7,9 @@ import 'package:task_mind/Features/auth/presentation/views/widgets/login_view_bo
 import 'package:task_mind/Features/home/presentation/manager/cubit/cubit/more_cubit.dart';
 import 'package:task_mind/Features/home/presentation/manager/cubit/home_cubit.dart';
 import 'package:task_mind/Features/home/presentation/manager/cubit/navigation_cubit.dart';
-import 'package:task_mind/Features/home/presentation/views/home_veiw.dart';
 import 'package:task_mind/core/bloc_op.dart';
 import 'package:task_mind/core/constants.dart';
 import 'package:task_mind/core/utils/api_service.dart';
-import 'package:task_mind/core/utils/my_functions.dart';
-import 'package:task_mind/core/utils/widgets/TextInputFeild.dart';
 
 main() async {
   WidgetsFlutterBinding.ensureInitialized();
